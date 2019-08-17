@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataAccess;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,14 +9,19 @@ namespace BlogApp.Controllers
 {
     public class HomeController : Controller
     {
+        BlogDataLayer bdl = new BlogDataLayer();
         public ActionResult Index()
         {
+            List<BlogEntry> blogs = bdl.GetBlogs();
+            ViewBag.Blogs = blogs;
+            
             return View();
         }
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            
+            ViewBag.Message = "";
 
             return View();
         }

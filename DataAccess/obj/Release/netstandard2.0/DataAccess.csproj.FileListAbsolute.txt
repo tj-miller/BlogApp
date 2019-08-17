@@ -1,0 +1,9 @@
+C:\Users\Travis Miller\source\repos\BlogApp\DataAccess\bin\Release\netstandard2.0\DataAccess.deps.json
+C:\Users\Travis Miller\source\repos\BlogApp\DataAccess\bin\Release\netstandard2.0\DataAccess.dll
+C:\Users\Travis Miller\source\repos\BlogApp\DataAccess\bin\Release\netstandard2.0\DataAccess.pdb
+C:\Users\Travis Miller\source\repos\BlogApp\DataAccess\obj\Release\netstandard2.0\DataAccess.csprojAssemblyReference.cache
+C:\Users\Travis Miller\source\repos\BlogApp\DataAccess\obj\Release\netstandard2.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Travis Miller\source\repos\BlogApp\DataAccess\obj\Release\netstandard2.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\Travis Miller\source\repos\BlogApp\DataAccess\obj\Release\netstandard2.0\DataAccess.AssemblyInfo.cs
+C:\Users\Travis Miller\source\repos\BlogApp\DataAccess\obj\Release\netstandard2.0\DataAccess.dll
+C:\Users\Travis Miller\source\repos\BlogApp\DataAccess\obj\Release\netstandard2.0\DataAccess.pdb
