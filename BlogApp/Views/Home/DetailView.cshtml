@@ -2,21 +2,24 @@
     ViewBag.Title = "Simple Blog Application";
 }
 
-<script src="jquery-3.4.1.min.js"></script>
 <script type="text/javascript">
     function PostCommentFn() {
+        console.log('init ajax');
         $.ajax({
             type: "POST",
             url: '/Home/PostComment',
-            data: "",
-            contentType: "application/json; charset=utf-8",
-            dataType: "json",
+            data: {"blogID": $("#commentText").val(), "comment": @ViewBag.Blog.ID },
             success: function (msg) {
                 $("#divResult").html("success");
+                console.log(msg);
             },
-            error: function (xhr, status, error) {
-                var err = eval("(" + xhr.responseText + ")");
-                $("#divResult").html(err.Message);
+            failure: function (msg) {
+                $("#divResult").html("failure");
+                console.log(msg);
+            },
+            error: function (msg) {
+                $("#divResult").html("error");
+                console.log(msg);
             }
 
         })
@@ -37,7 +40,6 @@
     }
 
     @{
-        var commentValue = Request.Form["commentText"];
         int currBlogId = ViewBag.Blog.ID;
     }
 
@@ -61,7 +63,7 @@
     </div>
     <div style="width:100%; display:flex; justify-content:space-between;">
         <button class="btn-primary" style="margin-top: 10px;" OnClientClick="return false;"
-                onclick="PostCommentFn(); @("window.location.href='" + @Url.Action("DetailView", "Home", new { blogPostId = currBlogId },null) + "'");">
+                onclick="PostCommentFn(); ">
             Post Comment
         </button>
         <button class="btn-secondary" style="margin-top: 10px;" onclick="@("window.location.href='" + @Url.Action("Index", "Home") + "'");">Cancel</button>

@@ -66,8 +66,10 @@ namespace BlogApp.Controllers
             return output;
         }
 
+        [HttpPost]
         public void PostComment(int blogID, string comment)
         {
+
             bdl.PostComment(blogID, comment);
         }
 
