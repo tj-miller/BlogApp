@@ -9,6 +9,7 @@
 
 <div class="row">
     <button class="btn-primary" style="margin-bottom: 20px; margin-left: 10px;">Add New Blog</button>
+    @Html.ActionLink("Add New Blog", "Create", "Home");
 
     @foreach (var entry in ViewBag.Blogs)
     {
@@ -17,7 +18,7 @@
             <small>@entry.CreationDate</small>
             <p>@entry.Content</p>
 
-            @Html.ActionLink("Continue Reading", "DetailView", "Home", new { blogPostId = entry.ID}, null)
+            @Html.ActionLink("Continue Reading", "DetailView", "Home", new { blogPostId = entry.ID }, null)
         </div>
     }
 

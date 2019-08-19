@@ -23,32 +23,34 @@ namespace BlogApp.Tests.Controllers
 
             // Assert
             Assert.IsNotNull(result);
+            Assert.AreEqual(1, result.ViewBag.Blogs[1].ID);
         }
 
         [TestMethod]
-        public void About()
+        public void Create()
         {
             // Arrange
             HomeController controller = new HomeController();
 
             // Act
-            ViewResult result = controller.About() as ViewResult;
+            ViewResult result = controller.Create() as ViewResult;
 
             // Assert
             Assert.AreEqual("Your application description page.", result.ViewBag.Message);
         }
 
         [TestMethod]
-        public void Contact()
+        public void DetailView()
         {
             // Arrange
             HomeController controller = new HomeController();
 
             // Act
-            ViewResult result = controller.Contact() as ViewResult;
+            ViewResult result = controller.DetailView(1) as ViewResult;
 
             // Assert
             Assert.IsNotNull(result);
+            
         }
     }
 }
