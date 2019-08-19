@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace DataAccess
+namespace BlogApp.Models
 {
     public class BlogEntry {
         private int id;

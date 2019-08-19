@@ -6,3 +6,4 @@ C:\Users\Travis Miller\source\repos\BlogApp\DataAccess\obj\Debug\netstandard2.0\
 C:\Users\Travis Miller\source\repos\BlogApp\DataAccess\bin\Debug\netstandard2.0\DataAccess.pdb
 C:\Users\Travis Miller\source\repos\BlogApp\DataAccess\obj\Debug\netstandard2.0\DataAccess.dll
 C:\Users\Travis Miller\source\repos\BlogApp\DataAccess\obj\Debug\netstandard2.0\DataAccess.pdb
+C:\Users\Travis Miller\source\repos\BlogApp\DataAccess\obj\Debug\netstandard2.0\DataAccess.csprojAssemblyReference.cache
